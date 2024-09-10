@@ -2,7 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
 
-
+group = 'com.hithub.batobatusai'
+version = '2.0.1'
 android {
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
@@ -34,7 +35,7 @@ repositories {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.llollox'
+            groupId = 'com.hithub.batobatusai'
             artifactId = 'androidtoggleswitch'
             version = '2.0.1'
             description 'Android Toggle Switch'
